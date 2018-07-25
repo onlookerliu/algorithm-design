@@ -7,11 +7,11 @@ func main() {
 	fmt.Scanf("%v", &t)
 	for i := 0; i < t; i++ {
 		var n int
-		var divisibleDigits int = 0
+		var divisibleDigits int
 		fmt.Scanf("%v", &n)
 		for i := n; i > 0; i /= 10 {
 			digit := i % 10
-			if digit != 0 && n % digit == 0 {
+			if digit != 0 && n%digit == 0 {
 				divisibleDigits++
 			}
 		}
